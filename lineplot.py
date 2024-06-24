@@ -1,4 +1,4 @@
-# show trends overtime, e.g display the growth of website traffic over a year.
+# show trends over time, e.g display the growth of website traffic over a year.
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd

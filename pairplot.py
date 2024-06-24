@@ -13,12 +13,12 @@ df=sns.load_dataset("tips")
 
 
 
-# sns.pairplot(df)  #pairplot just quatitative data ka show hota h but hm is ko mazeed
+sns.pairplot(df)  #pairplot just quatitative data ka show hota h but hm is ko mazeed
                     # catogorical m bhi show krva skty hn but using "hue"
 
 
-sns.pairplot(df, hue="sex", hue_order=["Female","Male"], palette="plasma",
-              markers=["*","D"]) #phly male uper tha label m or us ka color blue tha , ab female ka color blue ho ga via hue order q k hm n basically order change kr dia.
+# sns.pairplot(df, hue="sex", hue_order=["Female","Male"], palette="plasma",
+#               markers=["*","D"]) #phly male uper tha label m or us ka color blue tha , ab female ka color blue ho ga via hue order q k hm n basically order change kr dia.
 
 # pairplot saaarrroo ka sow hota h, ham chahty hn k kuch quatitaive variables ka show ho to is k liye hm "vars = " ka use krty hn
 # sns.pairplot(df, vars=["total_bill","tip"])
@@ -29,6 +29,8 @@ sns.pairplot(df, hue="sex", hue_order=["Female","Male"], palette="plasma",
 # kind="kde" or "reg" or "hist" or "scatter", ,,,,,, diag_kind parameter also used
 plt.show()
 
+
+# hue, hue_order, palette, var, x_var, y_var, kind, diag_kind, markers
 
 
 

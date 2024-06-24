@@ -12,10 +12,3 @@ x.map(plt.scatter, "total_bill","tip", edgecolor="g").add_legend()   #.add_legen
 plt.show()
 
 
-# df=sns.load_dataset("tips")
-# x = sns.FacetGrid(df, col="sex")  #col="sex" krny s male and female ka graph alag
-# # alag show ho ga
-# x.map(sns.scatterplot,x= "total_bill",y="tip", data=df, hue="day", palette="cool",
-#         edgecolor="g", linewidth=1).add_legend()#.add_legend() krna
-#                 # zruri h vrna legend show nhi ho ga 
-# plt.show()

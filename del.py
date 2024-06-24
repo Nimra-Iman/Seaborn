@@ -1,7 +1,12 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-data_set=sns.load_dataset("penguins")
-# sns.displot(data_set["species"] )
-sns.displot(data_set["bill_length_mm"], kde=True, rug=True,
-            color="g")
+
+df=sns.load_dataset("tips")
+
+# sns.scatterplot(x="tip",y="total_bill", data=df, hue="sex", style="day")
+# plt.show()
+
+x=sns.FacetGrid(df, col="sex", hue="day", palette="cool", edgecolor="g")
+x.map(plt.scatter, "tip","total_bill")
 plt.show()
+

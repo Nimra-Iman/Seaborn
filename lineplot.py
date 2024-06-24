@@ -1,3 +1,4 @@
+# show trends overtime, e.g display the growth of website traffic over a year.
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -47,8 +48,12 @@ sns.lineplot(x="sepal_length", y="sepal_width", data=x, hue="species", style="sp
  # ----> hue= yani "species" column m jitni bhi species hn un sab k according alag alag btao k 
  # jab sepal_length itni thi to sepal_width kitni ho gi
 
-#  ----> style="species", yani ab total tree species given hn iris data set m to hr specie 
+#  ----> style="species", yani ab total three species given hn iris data set m to hr specie 
 # k according jo graph ki line show ho gi us ka line style different ho ga
+
+# markers=["o","D",">"], y hm style k mutabik de rhy hn, yani style m species pas h or total
+# 3 species hn to markers m bhi 3 parameters pas hon gy, agar hm 2 parameters pass krty hn to
+#  teesri specie ka marker phly vali ki marker jesa ho ga
 
 #  ---->  palette="Greens"  , palettes m vhi saary colormap ki list valy names ay gy jo hm
 # n matplotlib k scatter plot m prhy th
@@ -60,6 +65,12 @@ sns.lineplot(x="sepal_length", y="sepal_width", data=x, hue="species", style="sp
 
 # it uses the markers parameter to determine the marker style for each level of the hue 
 # variable, but only when the style parameter is used in conjunction with hue.
+
+# sns.lineplot(x="bill_length_mm", y="flipper_length_mm", data=x, hue="species",
+#              palette="plasma", marker="o")  #is case m marker kaam kry ga but 
+                # ap chahty ho k hue m jo species pas hn, un species ka hr ek ka marker
+                # different ho to vo nhi chaly ga jab tak ap n style nhi dala hua
+
 plt.grid()
 plt.title("this is an iris dataset")
 plt.show()

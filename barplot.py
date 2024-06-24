@@ -41,7 +41,7 @@ sns.set_theme(style="darkgrid")
 #             orient="h" )
 
 sns.barplot(x="sex", y="bill_length_mm", data=data_set ,
-             capsize=0.5, dodge=False, saturation=100, alpha=0.5)
+             capsize=0.5, dodge=False, saturation=100, alpha=0.5, height=10)
 
 
 plt.show()
